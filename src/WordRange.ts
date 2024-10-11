@@ -1,5 +1,5 @@
 import * as Code from 'vscode';
-import * as XRegExp from 'xregexp';
+import XRegExp from 'xregexp';
 import Adjustment from '~/Adjustment';
 
 export enum RangeType {
@@ -8,7 +8,7 @@ export enum RangeType {
 }
 
 export default class WordRange {
-    public readonly bounds = /[-\w#%.]+/;
+    public readonly bounds = /[-\S#%.]+/;
 
     private get editor(): Code.TextEditor {
         return this.adjustment.editor;
@@ -57,7 +57,7 @@ export default class WordRange {
                 $`,
                 'x'
             ),
-            enum: XRegExp.cache('^[a-zA-Z](?:-?\\w+)*$'),
+            enum: XRegExp.cache('^\\S(?:-?\\S+)*$'),
         };
     }
 

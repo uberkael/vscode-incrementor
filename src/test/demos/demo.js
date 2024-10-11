@@ -38,3 +38,18 @@ let enumTest = true;
 
 //* on
 let enumTest = true;
+
+// [ "==", "!=" ],
+let enumTestEqualityTest = true == false;
+
+// [ "&&", "||" ].
+let enumTestBooleans = true && false;
+
+// [ ">", "<", ">=", "<=" ],
+let enumTestComparators = 1 < 2;
+
+// [ "+", "-", "*", "/", "%" ],
+let enumTestArithmetics = 1 + 2;
+
+// [ "&&=", "||=", "+=", "-=", "*=", "/=", "%=", "&=", "|=", "^=", "<<=", ">>="],
+// let assign_booleans /= 10
