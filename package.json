@@ -244,16 +244,15 @@
         "eslint": "^7.7.0",
         "glob": "^7.1.6",
         "lodash-es": "^4.17.15",
-        "mocha": "^8.1.1",
+        "mocha": "^10.7.3",
         "read-package-json": "^2.1.2",
         "standard-version": "^9.0.0",
         "ts-loader": "^8.0.3",
         "ts-node": "^9.0.0",
         "typescript": "^4.0.2",
         "vscode-test": "^1.4.0",
-        "webpack": "^4.44.1",
-        "webpack-cli": "^3.3.12",
+        "webpack": "^5.95.0",
+        "webpack-cli": "^5.1.4",
         "xregexp": "^4.3.0"
-    },
-    "dependencies": {}
+    }
 }
